@@ -1,0 +1,7 @@
+/* Optional small UI tweaks */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(124,58,237,0.06), rgba(99,102,241,0.03));
+}
+.profile-ring {
+  box-shadow: 0 8px 30px rgba(2,6,23,0.08);
+}
