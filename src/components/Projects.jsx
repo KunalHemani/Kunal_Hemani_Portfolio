@@ -1,69 +1,88 @@
-import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import { motion } from "framer-motion";
+
+/* ------------------ PROJECT DATA (ATS OPTIMIZED) ------------------ */
+const projects = [
+  {
+    title: "People’s Care - Med AI",
+    description:
+      "An AI based application designed to assist in medical image analysis, enabling efficient processing and interpretation of medical images to support healthcare decision-making.",
+    tech: ["Python", "Streamlit", "REST APIs"]
+  },
+  {
+    title: "GoBuddy",
+    description:
+      "A travel booking and assistance application allowing users to explore destinations, book tickets, and manage travel plans efficiently.",
+    tech: ["Flutter", "Firebase", "Cloud Firestore"]
+  },
+  {
+    title: "MySpace",
+    description:
+      "A desk-on-rent and freelance module platform that connects workspace providers and freelancers, allowing users to book desks and manage freelance opportunities.",
+    tech: ["Flutter", "Firebase", "Cloud Firestore"]
+  },
+  {
+    title: "Student Admission Enquiry App",
+    description:
+      "A streamlined application for managing student admission enquiries with efficient data organization and admin-friendly workflows.",
+    tech: ["Freelance", "Java", "MySQL"]
+  }
+];
+
+/* ------------------ ANIMATION ------------------ */
+const cardAnim = {
+  hidden: { opacity: 0, y: 16 },
+  visible: i => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.08, duration: 0.4 }
+  })
+};
 
 const Projects = () => {
-  const myProjects = [
-    {
-      title: "Inventory Management System",
-      desc: "A full-stack Java/MySQL application built to streamline Surat-based textile business operations.",
-      tech: ["Java", "MySQL", "JDBC", "Swing"],
-      link: "https://github.com/KunalHemani"
-    },
-    {
-      title: "Personalized Portfolio Engine",
-      desc: "High-performance React portfolio with Tailwind v4, Framer Motion, and Glassmorphism design.",
-      tech: ["React", "Vite", "Tailwind v4"],
-      link: "https://github.com/KunalHemani"
-    }
-  ];
-
   return (
-    <section id="projects" className="py-24 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex items-center gap-4 mb-16">
-          <h2 className="text-4xl font-bold text-white whitespace-nowrap">Featured <span className="text-cyan-400">Projects</span></h2>
-          <div className="h-[1px] w-full bg-white/10" />
-        </div>
+    <section id="projects" className="py-24 px-4 bg-[#030712]">
+      <div className="max-w-5xl mx-auto">
 
-        <div className="grid md:grid-cols-2 gap-10">
-          {myProjects.map((proj, i) => (
-            <motion.div 
-              key={i}
-              whileHover={{ y: -10 }}
-              className="glass rounded-[3rem] overflow-hidden border-white/5 hover:border-cyan-500/40 transition-all duration-500 group"
+        {/* Heading */}
+        <h2 className="text-4xl font-bold text-white mb-14 text-center">
+          Projects
+        </h2>
+
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {projects.map((project, i) => (
+            <motion.article
+              key={project.title}
+              variants={cardAnim}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={i}
+              whileHover={{ scale: 1.025 }}
+              className="glass p-8 rounded-[2.5rem] border border-white/5 hover:border-cyan-500/30 transition-all"
             >
-              {/* Visual Preview Area */}
-              <div className="relative h-64 bg-slate-900 overflow-hidden">
-                <div className="absolute inset-0 bg-[linear-gradient(rgba(6,182,212,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.1)_1px,transparent_1px)] bg-[size:30px_30px]" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-slate-800 font-black text-6xl group-hover:scale-125 transition-transform duration-700 opacity-50 uppercase tracking-tighter italic">
-                    {proj.title.split(' ')[0]}
-                  </span>
-                </div>
-              </div>
+              {/* Project Title */}
+              <h3 className="text-xl font-bold text-white mb-3">
+                {project.title}
+              </h3>
 
-              {/* Content Area */}
-              <div className="p-10">
-                <div className="flex gap-3 mb-6">
-                  {proj.tech.map(t => (
-                    <span key={t} className="text-[10px] font-bold tracking-widest text-cyan-400 uppercase border border-cyan-500/20 px-3 py-1 rounded-md bg-cyan-500/5">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-4">{proj.title}</h3>
-                <p className="text-slate-400 leading-relaxed mb-8">{proj.desc}</p>
-                
-                <div className="flex gap-6">
-                  <a href={proj.link} target="_blank" className="flex items-center gap-2 text-white text-sm font-bold hover:text-cyan-400 transition-colors">
-                    <Github size={18} /> Source Code
-                  </a>
-                  <a href="#" className="flex items-center gap-2 text-white text-sm font-bold hover:text-cyan-400 transition-colors">
-                    <ExternalLink size={18} /> Live Demo
-                  </a>
-                </div>
+              {/* Description */}
+              <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                {project.description}
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2">
+                {project.tech.map(tech => (
+                  <span
+                    key={tech}
+                    className="text-xs px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>
