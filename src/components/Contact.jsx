@@ -7,7 +7,10 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="text-4xl font-bold mb-6 text-white text-left">Let's <span className="text-cyan-400">Connect</span></h2>
-            <p className="text-slate-400 mb-10 text-left">Currently seeking opportunities in Surat or remote roles. Feel free to reach out!</p>
+            <p className="text-slate-400 mb-10 text-left">
+              Open to connecting with developers, recruiters, and professionals for
+              collaboration, discussions, and opportunities.
+            </p>
             
             <div className="space-y-6">
               <div className="flex items-center gap-4 text-slate-300">

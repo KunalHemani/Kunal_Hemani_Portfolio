@@ -46,7 +46,7 @@ const achievements = [
 
 const AcademicAchievements = () => {
   return (
-    <section id="achievements" className="py-24 px-4 bg-[#030712]">
+    <section id="academic-achievements" className="py-24 px-4 bg-[#030712]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 25 }}
