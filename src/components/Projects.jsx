@@ -1,7 +1,42 @@
 import { motion } from "framer-motion";
 
 /* ------------------ PROJECT DATA (ATS OPTIMIZED) ------------------ */
+/*
 const projects = [
+  {
+    title: "People’s Care - Med AI",
+    description:
+      "An AI based application designed to assist in medical image analysis, enabling efficient processing and interpretation of medical images to support healthcare decision-making.",
+    tech: ["Python", "Streamlit", "REST APIs"]
+  },
+  {
+    title: "GoBuddy",
+    description:
+      "A travel booking and assistance application allowing users to explore destinations, book tickets, and manage travel plans efficiently.",
+    tech: ["Flutter", "Firebase", "Cloud Firestore"]
+  },
+  {
+    title: "MySpace",
+    description:
+      "A desk-on-rent and freelance module platform that connects workspace providers and freelancers, allowing users to book desks and manage freelance opportunities.",
+    tech: ["Flutter", "Firebase", "Cloud Firestore"]
+  },
+  {
+    title: "Student Admission Enquiry App",
+    description:
+      "A streamlined application for managing student admission enquiries with efficient data organization and admin-friendly workflows.",
+    tech: ["Freelance", "Java", "MySQL"]
+  }
+];
+*/
+
+const projects = [
+  {
+    title: "Manufacturing Quality Analytics and Reporting System",
+    description:
+      "A manufacturing quality analytics and reporting solution designed to monitor production quality, track defects, analyze trends, and generate interactive reports for improving operational efficiency and decision-making.",
+    tech: ["Java", "SQL", ".NET", "Reporting Tools"]
+  },
   {
     title: "People’s Care - Med AI",
     description:
