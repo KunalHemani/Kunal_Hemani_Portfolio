@@ -43,12 +43,16 @@ const projects = [
       "An AI based application designed to assist in medical image analysis, enabling efficient processing and interpretation of medical images to support healthcare decision-making.",
     tech: ["Python", "Streamlit", "REST APIs"]
   },
+
+  /*
   {
     title: "GoBuddy",
     description:
       "A travel booking and assistance application allowing users to explore destinations, book tickets, and manage travel plans efficiently.",
-    tech: ["Flutter", "Firebase", "Cloud Firestore"]
+    tech: ["Flutter", "Firebase", "Cloud Firestore"] 
   },
+  */
+
   {
     title: "MySpace",
     description:
