@@ -44,7 +44,7 @@ const Hero = () => {
           <a href="#projects" className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 px-8 py-3 rounded-xl font-bold transition-all shadow-lg shadow-cyan-500/20">
             View My Work
           </a>
-          <a href="/Kunal_Hemani_Resume.pdf" download className="glass px-8 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white/10 transition-all text-white">
+          <a href="/Kunal_Hemani.pdf" download className="glass px-8 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white/10 transition-all text-white">
             <Download size={18} /> Download CV
           </a>
         </motion.div>
