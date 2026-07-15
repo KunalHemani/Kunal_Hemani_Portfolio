@@ -48,7 +48,7 @@ const Tabs = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-[#030712]">
+    <section id="skills" className="py-24 px-4 bg-[#030712]">
       <div className="max-w-7xl mx-auto">
 
         {/* Toggle */}

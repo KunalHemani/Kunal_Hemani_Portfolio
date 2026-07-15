@@ -32,7 +32,7 @@ const Hero = () => {
           transition={{ delay: 0.3 }}
           className="text-lg md:text-2xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          A passionate developer from <span className="text-white">Surat</span> crafting digital experiences with clean code and creative solutions.
+          A passionate developer crafting digital experiences with clean code and creative solutions.
         </motion.p>
 
         <motion.div

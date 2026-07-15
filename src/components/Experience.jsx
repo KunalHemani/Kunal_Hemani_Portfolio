@@ -9,7 +9,7 @@ const experiences = [
     location: "Ahmedabad, Gujarat",
     description:
       "Working on internal software applications and production IT systems to improve operational efficiency. Developing the Manufacturing Quality Analytics and Reporting System with features like defect tracking, quality classification, trend analysis, dashboards, and report generation.",
-    tech: ["Java", "SQL", ".NET", "Reporting Tools"],
+    tech: [".NET", "C#", "SQL"],
   },
 ];
 
@@ -25,7 +25,7 @@ const Experience = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-white mb-14 text-center">
-            Experience <span className="text-cyan-400">.</span>
+            Experience <span className="text-cyan-400"></span>
           </h2>
 
           <div className="space-y-6">

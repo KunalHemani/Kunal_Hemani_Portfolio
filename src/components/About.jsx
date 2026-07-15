@@ -47,9 +47,7 @@ const About = () => {
               gateway integration using Stripe
             </span>
             . My work includes developing{" "}
-            <span className="text-white font-semibold">
               Manufacturing Quality Analytics and Reporting System
-            </span>
             , AI-powered healthcare applications, travel and workspace
             management platforms, and secure payment-enabled applications.
           </p>
