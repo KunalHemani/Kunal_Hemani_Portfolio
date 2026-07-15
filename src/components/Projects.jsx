@@ -35,7 +35,7 @@ const projects = [
     title: "Manufacturing Quality Analytics and Reporting System",
     description:
       "A manufacturing quality analytics and reporting solution designed to monitor production quality, track defects, analyze trends, and generate interactive reports for improving operational efficiency and decision-making.",
-    tech: ["Java", "SQL", ".NET", "Reporting Tools"]
+    tech: [".NET", "SQL", "Reporting Tools"]
   },
   {
     title: "People’s Care - Med AI",
